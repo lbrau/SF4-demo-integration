@@ -5,13 +5,17 @@
         "php": ">=7.1.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "grdf/gda-api": "*",
         "symfony/console": "4.4.*",
         "symfony/dotenv": "4.4.*",
         "symfony/flex": "^1.3.1",
         "symfony/framework-bundle": "4.4.*",
+        "symfony/var-dumper": "4.4.*",
         "symfony/yaml": "4.4.*"
     },
     "require-dev": {
+        "symfony/maker-bundle": "^1.29",
+        "symfony/phpunit-bridge": "^5.2"
     },
     "config": {
         "preferred-install": {
@@ -49,6 +53,12 @@
             "@auto-scripts"
         ]
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../grdf-si-gdabundle/"
+        }
+    ],
     "conflict": {
         "symfony/symfony": "*"
     },
